@@ -1,0 +1,13 @@
+mutation deleteCard($input: DeleteCardRequest!) {
+  innopay_card__delete(input: $input) {
+    ok
+    problem {
+      ... on DeletingCardIsActiveProblem {
+        message
+      }
+      ... on InnopayServiceBadRequestProblem {
+        message
+      }
+    }
+  }
+}

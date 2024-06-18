@@ -1,0 +1,17 @@
+query GetFilteredRentAdsForMap($filter: FindLongTermRentAdsFilterRequest!) {
+  rentAd__find_longTermAdsCluster(filter: $filter) {
+    data {
+      cost
+      id
+      apartmentType
+      title
+      photo
+      lng
+      lat
+    }
+    slugs {
+      id
+      slug
+    }
+  }
+}

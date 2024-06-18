@@ -1,0 +1,32 @@
+{
+  "buttons": {
+    "primary": "Продолжить",
+    "secondary": "Назад"
+  },
+  "rooms": {
+    "title": "Количество комнат",
+    "studio": "Студия"
+  },
+  "about": {
+    "title": "Название дачного массива",
+    "totalArea": "Общая площадь",
+    "landArea": "Площадь участка",
+    "waterSupply": "Питьевая вода",
+    "electricity": "Электричество",
+    "gasSupply": "Газ",
+    "industrialTitle": "Название объекта",
+    "territoryArea": "Площадь территории",
+    "objectName": "Название объекта",
+    "yearOfConstruction": "Год постройки",
+    "objectArea": "Площадь объекта",
+    "ceilingHeight": "Высота потолков",
+    "communications": "Коммуникации",
+    "chooseYear": "Выберите год",
+    "floor": "Этаж",
+    "writeFloor": "Напишите этаж",
+    "objectPlacement": "Размещение объекта"
+  },
+  "guests": {
+    "title": "Максимальное количество гостей"
+  }
+}

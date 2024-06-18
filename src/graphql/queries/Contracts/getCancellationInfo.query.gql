@@ -1,0 +1,11 @@
+query GetCancellationInfo($input:TenantContractCancelationInfoRequest!){
+    contract__tenant_cancelationInfo(input: $input){
+        cancelationDate
+        checkOutDate
+        checkoutType
+        refundsAmount
+        strategyType
+        withdrawalAmount
+        recomputedLastStayWithdrawalAmount
+    }
+}

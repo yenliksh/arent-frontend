@@ -1,0 +1,7 @@
+mutation ContractOfferAcceptByNewCard($input: ContractTemporaryConcludeRequest!) {
+  contractOffer__acceptByNewCard(input: $input) {
+    contract {
+      ...ContractChatFragment
+    }
+  }
+}

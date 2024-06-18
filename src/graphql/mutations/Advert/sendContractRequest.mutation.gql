@@ -1,0 +1,56 @@
+mutation SendContractRequest($input: SendRequest!) {
+  contract_request__send(input: $input) {
+    problem {
+      ... on ChosenDatesIsNotAvailableProblem {
+        message
+      }
+
+      ... on ReduceTheNumberOfGuestsProblem {
+        message
+      }
+      ... on ContractRequestAlreadyExistsProblem {
+        message
+      }
+      ... on ReduceTheNumberOfGuestsProblem {
+        message
+      }
+
+      ... on SpecifyPaymentMethodProblem {
+        message
+      }
+      ... on ContractRequestAlreadyExistsProblem {
+        message
+      }
+    }
+    contractRequest {
+      id
+      apartmentAdId
+      apartmentRentPeriodType
+      arrivalDate
+      createdAt
+      deletedAt
+      departureDate
+      apartmentAd {
+        id
+        contractRequests {
+          id
+          status
+        }
+      }
+      guests {
+        numberOfChildren
+        numberOfAdult
+        numberOfPets
+      }
+      status
+      tenant {
+        firstName
+        id
+        lastName
+      }
+      tenantId
+      updatedAt
+    }
+  }
+  __typename
+}

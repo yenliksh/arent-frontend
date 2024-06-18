@@ -1,0 +1,5 @@
+mutation CreateRentIdentificator($input: CreateApartmentAdIdentificatorRequest!) {
+  rentAdIdentificator__create(input: $input) {
+    apartmentId
+  }
+}

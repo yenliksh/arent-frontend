@@ -1,0 +1,11 @@
+fragment BaseContractAddressFragment on BaseContractAddressDataModel {
+  city
+  country
+  houseNumber
+  region
+  street
+  geoPoint {
+    lat
+    lng
+  }
+}

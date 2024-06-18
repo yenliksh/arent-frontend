@@ -1,0 +1,12 @@
+mutation DeleteGuarantor {
+  user__profile_deleteGuarantor {
+    user {
+      id
+      guarantors {
+        phone
+        lastName
+        firstName
+      }
+    }
+  }
+}

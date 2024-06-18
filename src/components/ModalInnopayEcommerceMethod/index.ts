@@ -1,0 +1,1 @@
+export { ModalInnopayEcommerceMethod } from './ModalInnopayEcommerceMethod';

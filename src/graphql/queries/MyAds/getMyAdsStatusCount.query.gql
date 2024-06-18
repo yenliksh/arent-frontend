@@ -1,0 +1,9 @@
+query GetMyAdsStatusCount {
+  rentAd__myRentAd_statusCount {
+    ACTIVE
+    DRAFT
+    PAUSED
+    PROCESSING
+    PUBLISHED
+  }
+}

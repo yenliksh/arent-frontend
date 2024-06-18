@@ -1,0 +1,9 @@
+query GetApartmentsIdentificatorByApIds($input: FindApartmentAdsIdentificatorsRequest!) {
+  rentAdIdentificators__findByRentIds(input: $input) {
+    slugs {
+      id
+      slug
+      apartmentId
+    }
+  }
+}

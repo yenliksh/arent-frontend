@@ -1,0 +1,5 @@
+mutation SendRentAdComplaint($input: CreateApartmentAdComplaintRequest!) {
+  rent_ad_complaint__send(input: $input) {
+    ok
+  }
+}

@@ -1,0 +1,124 @@
+query GetLongTermRentByApId($id: FindLongTermRentAdRequest!) {
+  rentAd__find_longTermAdByApId(input: $id) {
+    data {
+      apartmentAdId
+      cost
+      createdAt
+      currency
+      declineReason
+      deletedAt
+      id
+      isApproved
+      status
+      updatedAt
+      apartmentAd {
+        address {
+          city
+          country
+          houseNumber
+          lat
+          lng
+          region
+          street
+        }
+        apartmentType
+        apartmentCategory
+        contractRequests {
+          id
+          apartmentAdId
+          apartmentRentPeriodType
+          arrivalDate
+          createdAt
+          deletedAt
+          departureDate
+          guests {
+            numberOfAdult
+            numberOfChildren
+            numberOfPets
+          }
+          status
+          tenantId
+          updatedAt
+          contract {
+            id
+            status
+          }
+        }
+        createdAt
+        defaultPaymentMethod
+        deletedAt
+        description {
+          description
+          forFamily
+          freeParking
+          name
+          quite
+          remoteView
+          selfCheckIn
+          workSpace
+        }
+        characteristics {
+          ceilingHeight
+          floor
+          gas
+          gasSupply
+          heating
+          landArea
+          light
+          objectArea
+          objectPlacement
+          sewerage
+          territoryArea
+          totalArea
+          ventilation
+          water
+          waterSupply
+          yearOfConstruction
+        }
+        details {
+          numberOfRooms
+          numberOfGuests
+        }
+        id
+        landlord {
+          avatarKey
+          birthDate
+          createdAt
+          deletedAt
+          firstName
+          gender
+          id
+          isIdentityApproved
+          lastName
+          middleName
+          updatedAt
+          isPhoneApproved
+        }
+        landlordId
+        photos {
+          fileKey
+          order
+        }
+        rentPeriodType
+        rules {
+          allowedToHangingOut
+          allowedToSmoke
+          allowedWithChildren
+          allowedWithPets
+        }
+        updatedAt
+        videos {
+          fileKey
+          order
+        }
+      }
+    }
+    averageResponseOnRequest {
+      days
+      hours
+      minutes
+      seconds
+      milliseconds
+    }
+  }
+}

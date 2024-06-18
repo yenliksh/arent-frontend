@@ -1,0 +1,45 @@
+query GetShortRentAdsList($filter: FindShortTermRentAdsFilterRequest!, $pagination: BaseOffsetPaginationRequest!) {
+  rentAd__find_shortTermAds(filter: $filter, pagination: $pagination) {
+    data {
+      apartmentAdId
+      apartmentAd {
+        apartmentType
+        apartmentCategory
+        details {
+          numberOfRooms
+          numberOfGuests
+        }
+        description {
+          name
+        }
+        shortTermRent {
+          cost
+          id
+        }
+        rentPeriodType
+        address {
+          region
+          lat
+          city
+          lng
+          street
+          houseNumber
+        }
+        photos {
+          fileKey
+          order
+        }
+      }
+    }
+    pageInfo {
+      totalItems
+      currentPage
+      totalPages
+      limit
+    }
+    slugs {
+      id
+      slug
+    }
+  }
+}

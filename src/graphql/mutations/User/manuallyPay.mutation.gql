@@ -1,0 +1,7 @@
+mutation PayManually($input: TenantManuallyPayRequest!) {
+  paymentTransaction__tenant_manuallyPay(input: $input) {
+    paymentTransaction {
+      id
+    }
+  }
+}

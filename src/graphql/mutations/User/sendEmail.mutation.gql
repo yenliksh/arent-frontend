@@ -1,0 +1,5 @@
+mutation SendEmail {
+    user__profile_verificationEmailSend {
+        ok
+    }
+}

@@ -1,0 +1,251 @@
+{
+  "notify": {
+    "today": "Сегодня",
+    "yesterday": "Вчера"
+  },
+  "months": {
+    "january": "Январь",
+    "february": "Февраль",
+    "march": "Март",
+    "april": "Апрель",
+    "may": "Май",
+    "june": "Июнь",
+    "july": "Июль",
+    "august": "Август",
+    "september": "Сентябрь",
+    "october": "Октябрь",
+    "november": "Ноябрь",
+    "december": "Декабрь",
+    "0": "января",
+    "1": "февраля",
+    "2": "марта",
+    "3": "апреля",
+    "4": "мая",
+    "5": "июня",
+    "6": "июля",
+    "7": "августа",
+    "8": "сентября",
+    "9": "октября",
+    "10": "ноября",
+    "11": "декабря"
+  },
+  "cities": {
+    "almaty": "Алматы",
+    "nurSultan": "Астана",
+    "shymkent": "Шымкент",
+    "aktobe": "Актобе",
+    "karaganda": "Караганда",
+    "atyrau": "Атырау",
+    "astana": "Астана",
+    "semey": "Семей",
+    "taraz": "Тараз",
+    "ust'-kamenogorsk": "Усть-Каменогорск",
+    "kostanay": "Костанай",
+    "zhezqazghan": "Жезказган",
+    "kyzylorda": "Кызылорда",
+    "petropavl": "Петровалск",
+    "pavlodar": "Павлодар",
+    "taldykorgan": "Талдыкорган",
+    "Turkistan": "Туркистан",
+    "Kokshetau": "Кокшетау",
+    "uralsk": "Уральск"
+  },
+  "rentPeriod": {
+    "longTerm": "месяц",
+    "shortTerm": "сутки"
+  },
+  "guests": {
+    "singularPrimary": "гость",
+    "singularSecondary": "гостя",
+    "plural": "гостей"
+  },
+  "adults": {
+    "singularPrimary": "взрослый",
+    "singularSecondary": "взрослых",
+    "plural": "взрослых"
+  },
+  "childs": {
+    "singularPrimary": "ребенок",
+    "singularSecondary": "детей",
+    "plural": "детей"
+  },
+  "pets": {
+    "singularPrimary": "животное",
+    "singularSecondary": "животных",
+    "plural": "животных"
+  },
+  "sleepingPlace": {
+    "singularPrimary": "спальное место",
+    "singularSecondary": "спальных места",
+    "plural": "спальных мест"
+  },
+  "monthForm": {
+    "singularPrimary": "месяц",
+    "singularSecondary": "месяца",
+    "plural": "месяцев"
+  },
+  "rooms": {
+    "singularPrimary": "комната",
+    "singularSecondary": "комнаты",
+    "plural": "комнат"
+  },
+  "places": {
+    "singularPrimary": "место",
+    "singularSecondary": "места",
+    "plural": "мест"
+  },
+  "nights": {
+    "singularPrimary": "ночь",
+    "singularSecondary": "ночи",
+    "plural": "ночей"
+  },
+  "variants": {
+    "singularPrimary": "вариант",
+    "singularSecondary": "варианта",
+    "plural": "вариантов"
+  },
+  "baths": {
+    "singularPrimary": "ванна",
+    "singularSecondary": "ванны",
+    "plural": "ванн"
+  },
+  "days": {
+    "singularPrimary": "дня",
+    "singularSecondary": "дней",
+    "plural": "дней"
+  },
+  "hours": {
+    "singularPrimary": "часа",
+    "singularSecondary": "часов",
+    "plural": "часов"
+  },
+  "minutes": {
+    "singularPrimary": "минуты",
+    "singularSecondary": "минут",
+    "plural": "минут"
+  },
+  "date": {
+    "atTime": "в",
+    "error": "Разница между прибытием и выездом должна быть ровно 22 часа"
+  },
+  "advertCreateSteps": {
+    "rentType": "Формат и стоимость аренды",
+    "houseType": "Выбор типа жилья",
+    "moreAboutHousing": "Подробнее о жилье",
+    "address": "Адрес",
+    "photo": "Фото ",
+    "houseDescription": "Описание жилья",
+    "importantInfo": "Важная информация",
+    "head": "Сохранить черновик",
+    "test": "Новое объявление"
+  },
+  "advertHeader": {
+    "button": "Сохранить",
+    "title": "Новое объявление"
+  },
+  "homeRules": {
+    "homeRules": "Правила дома",
+    "animals": "Можно с животными",
+    "noAnimals": "Нельзя с животными",
+    "smoking": "Курение разрешено",
+    "noSmoking": "Курение запрещено",
+    "party": "Вечеринки разрешены",
+    "noParty": "Без вечеринок и мероприятий",
+    "children": "Можно с детьми",
+    "noChildren": "Нельзя с детьми"
+  },
+  "fileWeight": {
+    "weightInMB": "мб",
+    "weightInKB": "кб"
+  },
+  "systemMessages": {
+    "temporaryBookingRevoke": {
+      "title": "Предложение аннулировано",
+      "description": {
+        "landlord": "Время на оплату бронирования истекло.",
+        "tenant": "Время на оплату бронирования истекло."
+      }
+    },
+    "bookingRequest": "отправил заявку на бронирование ",
+    "bookingRequestDate": "с {{count.arrivalDate}} по {{count.departureDate}} ",
+    "instantBooking": {
+      "title": "Бронирование подтверждено",
+      "description": {
+        "landlord": "Оплата за аренду поступит на указанный способ выплаты",
+        "tenant": "Оплата за аренду будет списана с указанного способа оплаты."
+      }
+    },
+    "bookingConcluded": {
+      "title": "Сделка успешно совершена",
+      "momentRent": {
+        "landlord": "Оплата за аренду поступит на указанный способ выплаты",
+        "tenant": "Оплата за аренду будет списана с указанного способа оплаты."
+      },
+      "recurringRent": {
+        "landlord": "Оплата за первый месяц будет перечислена вам по истичению 24 часов с момента заезда арендатора. В дальнейшем платежи будут поступать ежемесячно.",
+        "tenant": "Оплата за аренду будет списана с указанного способа оплаты. В дальнейшем платежи будут списываться ежемесячно."
+      },
+      "partialRent": {
+        "landlord": "Оплата за аренду поступит на указанный способ выплаты",
+        "tenant": "Половина оплаты за проживание списана с указанного способа оплаты. \n Остаток спишется {{count}}"
+      },
+      "shortTermDescription": {
+        "landlord": "Оплата за аренду поступит на указанный способ выплаты",
+        "tenant": "Оплата за аренду будет списана с указанного способа оплаты."
+      },
+      "longTermDescription": {
+        "landlord": "Оплата за первый месяц будет перечислена вам по истечении 24 часов с момента заезда арендатора. В дальнейшем платежи будут поступать ежемесячно.",
+        "tenant": "Оплата за первый месяц проживания списана с указанного способ оплаты. В дальнейшем платежи будут списываться ежемесячно."
+      }
+    },
+    "offerSending": {
+      "landlord": "Вы отправили условия подписания сделки",
+      "tenant": "Собственник отправил условия подписания сделки"
+    },
+    "offerRejected": {
+      "landlord": {
+        "received": "Арендатор отклонил сделку",
+        "sent": "Вы отозвали сделку"
+      },
+      "tenant": {
+        "received": "Сделка отозвана собственником",
+        "sent": "Вы отклонили сделку"
+      },
+      "system": {
+        "title": "Предложение аннулировано",
+        "description": {
+          "tenant": "Во избежание мошеничества, сделка обнуляется, если вы продолжаете переписку с арендодателем после получения условий. Чтобы принять предложение, попросите арендодателя повторно отправить условия сделки.",
+          "landlord": "Во избежание мошеничества, сделка обнуляется, если вы продолжаете переписку с арендатором после отправки условий. Отправьте сделку повторно, чтобы арендатор рассмотрел предложение."
+        }
+      }
+    },
+    "shortTermRentBooking": {
+      "instant": "забронировал жилье "
+    }
+  },
+  "complains": {
+    "user": {
+      "IThinkTheyAreDeceiving": "Я думаю меня обманывают",
+      "thisUserIsBehavingIndecently": "Этот пользователь ведет себя непристойно",
+      "thisIsSpam": "Это спам",
+      "other": "Другое"
+    },
+    "ad": {
+      "thereIsAnErrorInTheAd": "В объявлении есть ошибка",
+      "thisPlaceDoesNotExist": "Такого места не существует",
+      "thisIsAFraud": "Это мошенничество",
+      "obsceneContent": "Непристойный контент",
+      "other": "Другое"
+    }
+  },
+  "categories": {
+    "flat": "Квартиры",
+    "house": "Дома",
+    "countryhouse": "Дачи",
+    "area": "Участки",
+    "commercial": "Коммерческая недвижимость",
+    "industrial": "Промбазы и заводы",
+    "foreign": "Зарубежная недвижимость",
+    "otherrealestate": "Прочая недвижимость"
+  }
+}

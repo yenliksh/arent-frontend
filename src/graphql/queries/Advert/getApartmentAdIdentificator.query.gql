@@ -1,0 +1,8 @@
+query GetApartmentIdentificator($input: FindApartmentAdIdentificatorRequest!) {
+  rentAdIdentificator__find(input: $input) {
+    apartmentId
+    keywordsSeo
+    titleSeo
+    descriptionSeo
+  }
+}

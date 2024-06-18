@@ -1,0 +1,1 @@
+export { ApartamentListWrapper } from './ApartamentListWrapper';

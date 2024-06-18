@@ -1,0 +1,34 @@
+query GetHistoryInvoice($input: PaymentInvoicesHistoryRequest!) {
+  paymentTransaction_historyInvoice(input: $input) {
+    data {
+      id
+      createdAt
+      isSuccess
+      updatedAt
+      invoiceDate
+      type
+      cardMeta {
+        panMasked
+      }
+      paymentTransaction {
+        id
+        cost
+        totalAmountToBeTransferred
+        totalAmountPayable
+
+        contract {
+          id
+          cost
+
+          baseApartmentAdData {
+            title
+          }
+        }
+      }
+    }
+    pageInfo {
+      count
+      afterCursor
+    }
+  }
+}

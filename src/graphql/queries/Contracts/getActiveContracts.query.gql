@@ -1,0 +1,32 @@
+query GetActiveContracts {
+    contract__landlord_activeRents {
+        apartmentAdId
+        cost
+        nextPayment {
+            contractId
+            id
+            withdrawFundsDate
+        }
+        apartmentRentPeriodType
+        apartmentAd {
+            ...myApartmentFragment,
+            longTermRent {
+                id
+                isApproved
+                cost
+                ownershipDocuments
+                declineReason
+            }
+            shortTermRent {
+                id
+                isApproved
+                lockedDates {
+                    endDate,startDate
+                }
+                bookingAccessInMonths
+                cost
+                declineReason
+            }
+        }
+    }
+}

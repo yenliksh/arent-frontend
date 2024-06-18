@@ -1,0 +1,13 @@
+query GetFirstStepAdvert($input: MyApartmentAdRequest!) {
+  rentAd__myRentAd(input: $input) {
+    rentPeriodType
+    id
+    completeStep
+    shortTermRent {
+      cost
+    }
+    longTermRent {
+      cost
+    }
+  }
+}

@@ -1,0 +1,5 @@
+mutation SendContractRequestStatusEmail($input: SendRequestStatusEmail!) {
+  contract_requestStatus__sendEmail(input: $input) {
+    ok
+  }
+}

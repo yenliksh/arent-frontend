@@ -1,0 +1,41 @@
+overwrite: true
+schema: ${GQL_API_URL}
+documents: 'src/**/*.{graphql,gql}'
+hooks:
+  afterAllFileWrite:
+    - prettier --write
+generates:
+  src/__generated__/types.ts:
+    plugins:
+      - 'typescript'
+  src/:
+    preset: near-operation-file
+    presetConfig:
+      folder: __generated__
+      extension: .tsx
+      baseTypesPath: __generated__/types.ts
+    plugins:
+      - typescript-operations
+      - typescript-react-apollo
+      - add:
+          content: '/* eslint-disable simple-import-sort/imports */'
+      - add:
+          content: '/* eslint-disable import/order */'
+      - add:
+          content: '/* eslint-disable import/newline-after-import */'
+      - add:
+          content: '/* eslint-disable no-redeclare */'
+      - add:
+          content: '/* eslint-disable unused-imports/no-unused-imports */'
+      - add:
+          content: '/* eslint-disable no-unused-vars */'
+    config:
+      documentMode: 'documentNodeImportFragments'
+      namingConvention: keep
+      nonOptionalTypename: true
+      dedupeOperationSuffix: true
+      omitOperationSuffix: true
+      withHooks: true
+      withComponent: false
+      withHOC: false
+      reactApolloVersion: 3

@@ -1,0 +1,9 @@
+mutation SetInnopayCardStart {
+  innopay_card__save {
+    ok
+    problem {
+      message
+    }
+    url
+  }
+}

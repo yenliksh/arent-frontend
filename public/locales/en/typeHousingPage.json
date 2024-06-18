@@ -1,0 +1,17 @@
+{
+  "buttons": {
+    "primary": "Продолжить",
+    "secondary": "Назад"
+  },
+  "selectors": {
+    "flat": "Квартира",
+    "commercial": "Коммерческая недвижимость",
+    "industrial": "Промбаза/завод",
+    "countryHouse": "Дача",
+    "otherRealEstate": "Прочая недвижимость",
+    "area": "Участок",
+    "foreign": "Зарубежная недвижимость",
+    "room": "Комната",
+    "house": "Дом"
+  }
+}

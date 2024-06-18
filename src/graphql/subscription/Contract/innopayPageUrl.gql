@@ -1,0 +1,7 @@
+subscription InnopayPageUrl {
+  innopayPageUrl {
+    contractId
+    startUrlDate
+    url
+  }
+}

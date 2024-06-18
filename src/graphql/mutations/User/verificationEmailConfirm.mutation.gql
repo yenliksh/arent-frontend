@@ -1,0 +1,8 @@
+mutation ConfirmVerificationEmail($input: ProfileConfirmVerificationEmailRequest!) {
+  user__profile_verificationEmailConfirm(input: $input) {
+    user {
+      id
+      isEmailVerified
+    }
+  }
+}

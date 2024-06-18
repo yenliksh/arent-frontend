@@ -1,0 +1,15 @@
+mutation SetRentAddress($input: EditApartmentAdAddressRequest!) {
+  rentAd__edit_address(input: $input) {
+    apartmentAd {
+      id
+      address {
+        lat
+        lng
+        street
+        houseNumber
+        country
+        city
+      }
+    }
+  }
+}

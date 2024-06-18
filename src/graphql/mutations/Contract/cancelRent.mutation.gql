@@ -1,0 +1,7 @@
+mutation CancelContractTenant($input: CancelContractByTenantRequest!) {
+  contractTenant__cancel(input: $input) {
+    problem {
+      message
+    }
+  }
+}

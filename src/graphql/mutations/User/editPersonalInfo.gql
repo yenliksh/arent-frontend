@@ -1,0 +1,13 @@
+mutation EditPersonalInfo($input: ProfileEditPersonalInfoRequest!) {
+  user__profile_editPersonalInfo(input: $input) {
+    user {
+      id
+      birthDate
+      firstName
+      middleName
+      lastName
+      gender
+      birthDate
+    }
+  }
+}

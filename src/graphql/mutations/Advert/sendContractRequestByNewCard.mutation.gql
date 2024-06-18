@@ -1,0 +1,39 @@
+mutation SendInstantBookingContractByNewCard($input: ContractTemporaryInstantConcludeRequest!) {
+  contractInstantBooking__byNewCard(input: $input) {
+    problem {
+      ... on ContractOfferAlreadyExistsProblem {
+        message
+      }
+    }
+    contract {
+      id
+      apartmentAdId
+      apartmentRentPeriodType
+      arrivalDate
+      createdAt
+      deletedAt
+      departureDate
+      apartmentAd {
+        id
+        contractRequests {
+          id
+          status
+        }
+      }
+      guests {
+        numberOfChildren
+        numberOfAdult
+        numberOfPets
+      }
+      status
+      tenant {
+        firstName
+        id
+        lastName
+      }
+      tenantId
+      updatedAt
+    }
+  }
+  __typename
+}

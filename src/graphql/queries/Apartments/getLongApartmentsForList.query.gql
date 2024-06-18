@@ -1,0 +1,45 @@
+query GetFilteredRentAdsList($filter: FindLongTermRentAdsFilterRequest!, $pagination: BaseOffsetPaginationRequest!) {
+  rentAd__find_longTermAds(filter: $filter, pagination: $pagination) {
+    data {
+      apartmentAdId
+      apartmentAd {
+        id
+        apartmentType
+        details {
+          numberOfRooms
+          numberOfGuests
+        }
+        description {
+          name
+        }
+        longTermRent {
+          cost
+          id
+        }
+        rentPeriodType
+        address {
+          region
+          lat
+          city
+          lng
+          street
+          houseNumber
+        }
+        photos {
+          fileKey
+          order
+        }
+      }
+    }
+    pageInfo {
+      totalItems
+      currentPage
+      totalPages
+      limit
+    }
+    slugs {
+      id
+      slug
+    }
+  }
+}

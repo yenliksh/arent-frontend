@@ -1,0 +1,10 @@
+query GetTenantPaymentMethod($input: TenantContractCardRequest!) {
+  innopay__tenant_contractCard(input: $input) {
+    panMasked
+    id
+    panMasked
+    cardType
+    cnpCardId
+    __typename
+  }
+}

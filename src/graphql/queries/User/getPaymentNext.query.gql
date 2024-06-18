@@ -1,0 +1,16 @@
+query GetNextPayment($input: NextPaymentTransactionRequest!) {
+  paymentTransaction_paymentNext(input: $input) {
+    cost
+    id
+    withdrawFundsDate
+    totalAmountPayable
+    isReadyToPay
+    contract {
+      id
+      apartmentAdId
+      baseApartmentAdData {
+        title
+      }
+    }
+  }
+}

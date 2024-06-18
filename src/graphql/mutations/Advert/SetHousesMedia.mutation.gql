@@ -1,0 +1,11 @@
+mutation SetRentPhoto($input: EditApartmentAdMediaRequest!) {
+  rentAd__edit_media(input: $input) {
+    apartmentAd {
+      id
+      photos {
+        fileKey
+        order
+      }
+    }
+  }
+}

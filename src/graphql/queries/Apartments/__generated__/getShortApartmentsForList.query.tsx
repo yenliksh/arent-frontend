@@ -1,0 +1,243 @@
+/* eslint-disable simple-import-sort/imports */
+/* eslint-disable import/order */
+/* eslint-disable import/newline-after-import */
+/* eslint-disable no-redeclare */
+/* eslint-disable unused-imports/no-unused-imports */
+/* eslint-disable no-unused-vars */
+import * as Types from '../../../../__generated__/types';
+
+import { DocumentNode } from 'graphql';
+import * as Apollo from '@apollo/client';
+const defaultOptions = {} as const;
+export type GetShortRentAdsListVariables = Types.Exact<{
+  filter: Types.FindShortTermRentAdsFilterRequest;
+  pagination: Types.BaseOffsetPaginationRequest;
+}>;
+
+export type GetShortRentAdsList = {
+  __typename: 'Query';
+  rentAd__find_shortTermAds: {
+    __typename: 'FindShortTermRentAdsResponse';
+    data?: Array<{
+      __typename: 'ApartmentAdShortTermRentViewModel';
+      apartmentAdId: string;
+      apartmentAd: {
+        __typename: 'ApartmentAdViewModel';
+        apartmentType: Types.ApartmentType;
+        apartmentCategory: Types.ApartmentCategory;
+        rentPeriodType: Types.RentPeriodType;
+        details?: { __typename: 'ApartmentAdDetailsModel'; numberOfRooms: number; numberOfGuests: number } | null;
+        description?: { __typename: 'ApartmentAdDescriptionModel'; name: string } | null;
+        shortTermRent?: { __typename: 'ApartmentAdShortTermRentViewModel'; cost: string; id: string } | null;
+        address?: {
+          __typename: 'ApartmentAdAddressModel';
+          region?: string | null;
+          lat: number;
+          city: string;
+          lng: number;
+          street: string;
+          houseNumber: string;
+        } | null;
+        photos: Array<{ __typename: 'ApartmentAdMediaModel'; fileKey: string; order: number }>;
+      };
+    }> | null;
+    pageInfo?: {
+      __typename: 'BaseOffsetPaginationInfoModel';
+      totalItems: number;
+      currentPage: number;
+      totalPages: number;
+      limit: number;
+    } | null;
+    slugs: Array<{ __typename: 'SlugModel'; id: string; slug: string }>;
+  };
+};
+
+export const GetShortRentAdsListDocument = {
+  kind: 'Document',
+  definitions: [
+    {
+      kind: 'OperationDefinition',
+      operation: 'query',
+      name: { kind: 'Name', value: 'GetShortRentAdsList' },
+      variableDefinitions: [
+        {
+          kind: 'VariableDefinition',
+          variable: { kind: 'Variable', name: { kind: 'Name', value: 'filter' } },
+          type: {
+            kind: 'NonNullType',
+            type: { kind: 'NamedType', name: { kind: 'Name', value: 'FindShortTermRentAdsFilterRequest' } },
+          },
+        },
+        {
+          kind: 'VariableDefinition',
+          variable: { kind: 'Variable', name: { kind: 'Name', value: 'pagination' } },
+          type: {
+            kind: 'NonNullType',
+            type: { kind: 'NamedType', name: { kind: 'Name', value: 'BaseOffsetPaginationRequest' } },
+          },
+        },
+      ],
+      selectionSet: {
+        kind: 'SelectionSet',
+        selections: [
+          {
+            kind: 'Field',
+            name: { kind: 'Name', value: 'rentAd__find_shortTermAds' },
+            arguments: [
+              {
+                kind: 'Argument',
+                name: { kind: 'Name', value: 'filter' },
+                value: { kind: 'Variable', name: { kind: 'Name', value: 'filter' } },
+              },
+              {
+                kind: 'Argument',
+                name: { kind: 'Name', value: 'pagination' },
+                value: { kind: 'Variable', name: { kind: 'Name', value: 'pagination' } },
+              },
+            ],
+            selectionSet: {
+              kind: 'SelectionSet',
+              selections: [
+                {
+                  kind: 'Field',
+                  name: { kind: 'Name', value: 'data' },
+                  selectionSet: {
+                    kind: 'SelectionSet',
+                    selections: [
+                      { kind: 'Field', name: { kind: 'Name', value: 'apartmentAdId' } },
+                      {
+                        kind: 'Field',
+                        name: { kind: 'Name', value: 'apartmentAd' },
+                        selectionSet: {
+                          kind: 'SelectionSet',
+                          selections: [
+                            { kind: 'Field', name: { kind: 'Name', value: 'apartmentType' } },
+                            { kind: 'Field', name: { kind: 'Name', value: 'apartmentCategory' } },
+                            {
+                              kind: 'Field',
+                              name: { kind: 'Name', value: 'details' },
+                              selectionSet: {
+                                kind: 'SelectionSet',
+                                selections: [
+                                  { kind: 'Field', name: { kind: 'Name', value: 'numberOfRooms' } },
+                                  { kind: 'Field', name: { kind: 'Name', value: 'numberOfGuests' } },
+                                ],
+                              },
+                            },
+                            {
+                              kind: 'Field',
+                              name: { kind: 'Name', value: 'description' },
+                              selectionSet: {
+                                kind: 'SelectionSet',
+                                selections: [{ kind: 'Field', name: { kind: 'Name', value: 'name' } }],
+                              },
+                            },
+                            {
+                              kind: 'Field',
+                              name: { kind: 'Name', value: 'shortTermRent' },
+                              selectionSet: {
+                                kind: 'SelectionSet',
+                                selections: [
+                                  { kind: 'Field', name: { kind: 'Name', value: 'cost' } },
+                                  { kind: 'Field', name: { kind: 'Name', value: 'id' } },
+                                ],
+                              },
+                            },
+                            { kind: 'Field', name: { kind: 'Name', value: 'rentPeriodType' } },
+                            {
+                              kind: 'Field',
+                              name: { kind: 'Name', value: 'address' },
+                              selectionSet: {
+                                kind: 'SelectionSet',
+                                selections: [
+                                  { kind: 'Field', name: { kind: 'Name', value: 'region' } },
+                                  { kind: 'Field', name: { kind: 'Name', value: 'lat' } },
+                                  { kind: 'Field', name: { kind: 'Name', value: 'city' } },
+                                  { kind: 'Field', name: { kind: 'Name', value: 'lng' } },
+                                  { kind: 'Field', name: { kind: 'Name', value: 'street' } },
+                                  { kind: 'Field', name: { kind: 'Name', value: 'houseNumber' } },
+                                ],
+                              },
+                            },
+                            {
+                              kind: 'Field',
+                              name: { kind: 'Name', value: 'photos' },
+                              selectionSet: {
+                                kind: 'SelectionSet',
+                                selections: [
+                                  { kind: 'Field', name: { kind: 'Name', value: 'fileKey' } },
+                                  { kind: 'Field', name: { kind: 'Name', value: 'order' } },
+                                ],
+                              },
+                            },
+                          ],
+                        },
+                      },
+                    ],
+                  },
+                },
+                {
+                  kind: 'Field',
+                  name: { kind: 'Name', value: 'pageInfo' },
+                  selectionSet: {
+                    kind: 'SelectionSet',
+                    selections: [
+                      { kind: 'Field', name: { kind: 'Name', value: 'totalItems' } },
+                      { kind: 'Field', name: { kind: 'Name', value: 'currentPage' } },
+                      { kind: 'Field', name: { kind: 'Name', value: 'totalPages' } },
+                      { kind: 'Field', name: { kind: 'Name', value: 'limit' } },
+                    ],
+                  },
+                },
+                {
+                  kind: 'Field',
+                  name: { kind: 'Name', value: 'slugs' },
+                  selectionSet: {
+                    kind: 'SelectionSet',
+                    selections: [
+                      { kind: 'Field', name: { kind: 'Name', value: 'id' } },
+                      { kind: 'Field', name: { kind: 'Name', value: 'slug' } },
+                    ],
+                  },
+                },
+              ],
+            },
+          },
+        ],
+      },
+    },
+  ],
+} as unknown as DocumentNode;
+
+/**
+ * __useGetShortRentAdsList__
+ *
+ * To run a query within a React component, call `useGetShortRentAdsList` and pass it any options that fit your needs.
+ * When your component renders, `useGetShortRentAdsList` returns an object from Apollo Client that contains loading, error, and data properties
+ * you can use to render your UI.
+ *
+ * @param baseOptions options that will be passed into the query, supported options are listed on: https://www.apollographql.com/docs/react/api/react-hooks/#options;
+ *
+ * @example
+ * const { data, loading, error } = useGetShortRentAdsList({
+ *   variables: {
+ *      filter: // value for 'filter'
+ *      pagination: // value for 'pagination'
+ *   },
+ * });
+ */
+export function useGetShortRentAdsList(
+  baseOptions: Apollo.QueryHookOptions<GetShortRentAdsList, GetShortRentAdsListVariables>,
+) {
+  const options = { ...defaultOptions, ...baseOptions };
+  return Apollo.useQuery<GetShortRentAdsList, GetShortRentAdsListVariables>(GetShortRentAdsListDocument, options);
+}
+export function useGetShortRentAdsListLazyQuery(
+  baseOptions?: Apollo.LazyQueryHookOptions<GetShortRentAdsList, GetShortRentAdsListVariables>,
+) {
+  const options = { ...defaultOptions, ...baseOptions };
+  return Apollo.useLazyQuery<GetShortRentAdsList, GetShortRentAdsListVariables>(GetShortRentAdsListDocument, options);
+}
+export type GetShortRentAdsListHookResult = ReturnType<typeof useGetShortRentAdsList>;
+export type GetShortRentAdsListLazyQueryHookResult = ReturnType<typeof useGetShortRentAdsListLazyQuery>;
+export type GetShortRentAdsListQueryResult = Apollo.QueryResult<GetShortRentAdsList, GetShortRentAdsListVariables>;

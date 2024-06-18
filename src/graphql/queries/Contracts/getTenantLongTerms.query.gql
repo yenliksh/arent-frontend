@@ -1,0 +1,41 @@
+query getTenantActiveLongTerms($input: TenantLongTermRentContractsRequest!) {
+  contract__tenant_longTermRents(input: $input) {
+    data {
+      id
+      apartmentAdId
+      nextPayment {
+        contractId
+        id
+        withdrawFundsDate
+      }
+      arrivalDate
+      departureDate
+      landlord {
+        firstName
+      }
+      apartmentAd {
+        description {
+          description
+          name
+        }
+        photos {
+          fileKey
+        }
+        rentPeriodType
+        address {
+          city
+          country
+          houseNumber
+          region
+          street
+        }
+      }
+      cost
+    }
+    pageInfo {
+      afterCursor
+      count
+      perPage
+    }
+  }
+}

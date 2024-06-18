@@ -1,0 +1,10 @@
+mutation PublishAdvertAsync($input: PublishApartmentAdRequest!) {
+  rentAd__publish(input: $input) {
+    apartmentAd {
+      id
+    }
+    problem {
+      message
+    }
+  }
+}

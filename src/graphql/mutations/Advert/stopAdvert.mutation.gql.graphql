@@ -1,0 +1,13 @@
+mutation StopRentAdvert($input: PauseApartmentAdRequest!) {
+  rentAd__pause(input: $input) {
+    apartmentAd {
+      id
+      shortTermRent {
+        id
+      }
+      longTermRent {
+        id
+      }
+    }
+  }
+}

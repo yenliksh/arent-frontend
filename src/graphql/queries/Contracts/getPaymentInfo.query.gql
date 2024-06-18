@@ -1,0 +1,13 @@
+query GetPaymentInfo($input: TenantContractPaymentInfoRequest!) {
+    contract__tenant_paymentInfo(input: $input){
+        accommodationAvailableDate,
+        cancellationDate,
+        refundsAmount,
+        dateOfNextCharge,
+        paidAmount,
+        payableAmount,
+        payableAmountOfNextCharge
+        type
+        totalAmount
+    }
+}

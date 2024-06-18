@@ -1,0 +1,19 @@
+mutation SignInByGoogle($input: SignInByGoogleRequest!) {
+    user__signInByGoogle_verifyToken(input: $input) {
+        refreshToken
+        problem{
+            message
+        }
+        token,
+        user {
+            id
+            lastName
+            firstName
+            phone
+            email
+            birthDate
+            avatarKey
+            createdAt
+        }
+    }
+}

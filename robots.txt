@@ -1,0 +1,20 @@
+User-agent: *
+
+Allow: /
+
+Disallow: *?location=
+Disallow: *&startDate=
+Disallow: *&lat=
+Disallow: *&lng=
+Disallow: *&label=
+Disallow: *&endDate=
+Disallow: *&numberOfAdults=
+Disallow: *&numberOfChild=
+Disallow: *&numberOfPets=
+Disallow: *&max=
+Disallow: *&min=
+Disallow: *&numberOfGuests=
+Disallow: *&dateStartInitial=
+Disallow: *&dateEndInitial=
+Disallow: *&slug=
+Disallow: *?activeTab=

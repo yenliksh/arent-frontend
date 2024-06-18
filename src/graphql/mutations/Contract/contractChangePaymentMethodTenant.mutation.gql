@@ -1,0 +1,9 @@
+mutation ChangeTenantPaymentMethod($input: ChangeTenantPaymentMethodRequest!) {
+  contractTenantPaymentMethod__change(input: $input) {
+    id
+    panMasked
+    cnpCardId
+    cardType
+    __typename
+  }
+}

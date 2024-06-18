@@ -1,0 +1,35 @@
+query LandlordRentRequest($input: FindContractRequestForLandlordRequest!) {
+  contractRequest__forLandlord(input: $input) {
+    data {
+      apartmentRentPeriodType
+      id
+      apartmentAdId
+      apartmentAd {
+        rentPeriodType
+        description {
+          name
+        }
+      }
+      arrivalDate
+      departureDate
+      comment
+      guests {
+        numberOfAdult
+        numberOfChildren
+        numberOfPets
+      }
+      tenant {
+        id
+        avatarKey
+        firstName
+        lastName
+        isIdentityApproved
+      }
+    }
+    pageInfo {
+      perPage
+      count
+      afterCursor
+    }
+  }
+}

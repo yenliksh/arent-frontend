@@ -1,0 +1,12 @@
+query GetCards {
+  innopay__my_cards {
+    appointmentType
+    cardType
+    cnpCardId
+    createdAt
+    deletedAt
+    id
+    panMasked
+    updatedAt
+  }
+}
